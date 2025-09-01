@@ -13,3 +13,5 @@ OVERLAY_DURATION = 3        # seconds
 PERSISTENCE_SEC = 0.3       # seconds
 
 
+LOG_INTERVAL = 10
+
