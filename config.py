@@ -14,7 +14,7 @@ OVERLAY_SMOKE_PATH = "overlays/no_smoking.png"
 # Detection settings
 CONF_THRESHOLD = 0.5
 OVERLAY_DURATION = 3        # seconds
-PERSISTENCE_SEC = 0.3       # seconds
+PERSISTENCE_SEC = 0.3       # seconds (anti-false-positive)
 
 # Logging
 LOG_INTERVAL = 10
