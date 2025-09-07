@@ -1,6 +1,7 @@
 # Configuration
 INPUT_VIDEO = "input_videos/input.mp4"
 OUTPUT_FOLDER = "output_videos"
+AUDIO_OUTPUT_PATH = "output_videos/audio.wav"
 
 SMOKE_MODEL_PATH = "models/smoke_detect.pt"
 
