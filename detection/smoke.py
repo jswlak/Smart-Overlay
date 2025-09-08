@@ -1,4 +1,8 @@
 from ultralytics import YOLO
+import os, sys
+
+# Ensure project root is on sys.path for `config` import
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import SMOKE_MODEL_PATH, CONF_THRESHOLD, LOG_INTERVAL
 
 smoke_model = YOLO(SMOKE_MODEL_PATH)

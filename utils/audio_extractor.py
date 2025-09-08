@@ -1,5 +1,9 @@
 import os
+import sys
 from moviepy.editor import VideoFileClip
+
+# Add parent directory to path for config import
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import INPUT_VIDEO, OUTPUT_FOLDER, AUDIO_OUTPUT_PATH
 
 def extract_audio():
@@ -26,3 +30,6 @@ def extract_audio():
         video_clip.close()
 
     return AUDIO_OUTPUT_PATH
+
+if __name__ == "__main__":
+    extract_audio()

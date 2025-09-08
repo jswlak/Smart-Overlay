@@ -1,4 +1,7 @@
-import cv2
+import cv2, os, sys
+
+# Ensure project root is on sys.path for `config` import
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from config import *
 from detection.smoke import detect_smoke
 from utils.overlays import load_icon, apply_overlay
